@@ -67,6 +67,7 @@
              <div class="wrap">
                     <div class="bloc-12">
                         <p>
+                          <?php $plxShow->lang('POWERED_BY') ?> <a href="http://www.pluxml.org" title="<?php $plxShow->lang('PLUXML_DESCRIPTION') ?>">PluXml<i class="flaticon-leaf3"></i></a>
                           Page générée <?php $plxShow->lang('IN') ?> <?php $plxShow->chrono(); ?> 
                           utilisant la technologie <a href="http://libertea.fr">SASS</a> 
                           <i class="flaticon-lock4"> </i><a rel="nofollow" href="<?php $plxShow->urlRewrite('core/admin/'); ?>" title="<?php $plxShow->lang('ADMINISTRATION') ?>"><?php $plxShow->lang('ADMINISTRATION') ?></a>
