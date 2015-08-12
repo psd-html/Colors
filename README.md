@@ -6,7 +6,7 @@ Compatible avec la version 5.4
 
 Voir la démo à cette adresse: http://nextum.fr
 
-Utlisation du Framework-responsive-PluXml
+Utlisation du Framework-responsive-PluXml, placez le dossier Color dans le dossier plugin de votre site afin d'administrer le template.
 
 
 ![Alt text](http://nextum.fr/colors.png)
