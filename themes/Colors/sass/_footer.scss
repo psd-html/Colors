@@ -1,0 +1,86 @@
+/* style du footer */
+footer{
+    
+    .scroll>span{@include transition(all 0.5s);color:#fff;
+    
+        &:hover{color: $colorhover}
+    
+    }
+    .copyright {padding: 20px 0;
+        p{
+            color: #fff!important;
+            text-align: center;
+            font-size: $size * .8;
+        }
+        i{margin: 0 8px;}
+    } 
+    
+    h2{margin: 15px auto;display: block}
+    
+    .deco{margin-bottom: 40px}
+
+     a.facebook, a.twitter, a.google, a.rss{
+    -webkit-appearance: none;  // remove shadow in iOS
+    @include border-radius(0);  // remove border-radius in iOS
+
+    @include border-radius(5px);
+    margin-right: 8px;
+    margin-bottom: 20px;     
+    
+    color: #fff;
+    font-size: 18px;
+
+    padding: 11px;
+    text-decoration: none;
+    position:relative;
+    display: inline-block;
+    
+    @include transition(all 0.5s)
+
+
+     }
+    
+    a.facebook{@include box-shadow(0px 5px 0px darken( $facebook, 20% )); background: $facebook; 
+    
+        &:active{        
+            @include box-shadow(0px 2px 0px darken( $facebook, 20% ));
+            position:relative;
+            top:2px
+        }
+    }
+    
+    a.twitter{@include box-shadow(0px 5px 0px darken( $twitter, 20% )); background: $twitter;
+    
+        &:active{        
+                @include box-shadow(0px 2px 0px darken( $twitter, 20% ));
+                position:relative;
+                top:2px
+            }
+    
+    
+    }
+    a.google{@include box-shadow(0px 5px 0px darken( $google, 20% )); background: $google; 
+    
+         &:active{        
+                    @include box-shadow(0px 2px 0px darken( $google, 20% ));
+                    position:relative;
+                    top:2px
+                }
+    
+    
+    }
+    
+    a.rss{@include box-shadow(0px 5px 0px darken( $rss, 20% )); background: $rss; 
+    
+        &:active{        
+            @include box-shadow(0px 2px 0px darken( $rss, 20% ));
+            position:relative;
+            top:2px
+        }
+    }
+    
+    ul{margin: 0}
+    
+    ul li{display: block;float: left;margin: 0 3px 3px 0}  
+
+}

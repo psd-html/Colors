@@ -1,0 +1,73 @@
+/* style des formualires et des boutons */
+
+label{
+    display: inline-block;
+    width: 100%;
+    color: $secondaire;
+}
+
+input[type='text'], textarea{
+    background-color: #313d50;
+    background-image: none;
+    
+    @include border-radius (4px);
+    @include box-shadow (0 1px 1px rgba(0, 0, 0, 0.075) inset);
+
+    color: #fff;
+    font-size: 15px;
+
+    padding: 6px 12px!important;
+    width: 60%!important;
+    height: 36px!important;
+    
+    @include transition-duration(1s);
+
+}
+input[type='text']:hover, textarea:hover{
+    background-color: #566379;
+}
+textarea{
+    height: 150px!important;
+    resize: none;
+}
+input.capcha{
+    width: 60px;
+}
+input[type='submit'], .bt {
+    -webkit-appearance: none;  // remove shadow in iOS
+    @include border-radius(0);  // remove border-radius in iOS
+
+    @include border-radius(5px);
+
+    background: $colorhover; 
+    border: 1px solid $colorhover;
+    
+    color: #fff;
+    font-size: 18px;
+
+    padding: 11px;
+    text-decoration: none;
+    position:relative;
+    display: inline-block;
+    
+    
+    @include transition(all 0.5s);
+    
+    @include box-shadow(0px 5px 0px #84261a);
+
+
+    
+    
+    &:hover {
+
+
+        cursor: pointer;
+    }
+    
+    &:active{
+        @include box-shadow(0px 2px 0px #84261a);
+        position:relative;
+        top:2px;
+    }
+}
+.content_com {min-height: 88px}

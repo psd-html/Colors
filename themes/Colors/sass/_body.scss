@@ -1,0 +1,86 @@
+/* style du template */
+
+body{
+    font-family: $police;
+    font-size: $size;
+    color: $primaire;
+    background-color:$colorbkg;
+}
+
+
+ul {margin: 0;padding: 0}
+
+/* header du site avec la navigation */
+header{
+   padding: 0 
+}
+
+/* mise en page du contenu du site */
+.contenu, header{
+    overflow: hidden;
+    @include animate(fade-in, .6s, 400ms);
+}
+    
+
+span.c1, span.c2, span.c3, span.c4, span.c5, span.c6, span.c7, span.c8{
+        display: block;
+        height: 5px;
+        padding: 0;
+        margin: 0 $gutter * -0.5;
+        
+    }
+    
+    span.c1{background-color: $color1}
+    
+    span.c2{background-color: $color2}
+    
+    span.c3{background-color: $color3}
+    
+    span.c4{background-color: $color4}
+    
+    span.c5{background-color: $color5}
+    
+    span.c6{background-color: $color6}
+
+    span.c7{background-color: $color7}
+
+    span.c8{background-color: $color8}
+
+.tag{
+    @include border-radius(5px);
+
+    background: #313d50 ; 
+
+    
+    color: #fff!important;
+    font-size: 14px;
+
+    padding: 6px;
+    text-decoration: none;
+    position:relative;
+    display: inline-block;
+    
+    
+    @include transition(all 0.1s);
+    
+    @include box-shadow(0px 5px 0px  darken( #313d50, 10% ));
+   
+    
+    &:hover {
+
+    
+        cursor: pointer;
+    }
+    
+    &:active{
+        @include box-shadow(0px 2px 0px darken( #313d50 , 10% ));
+        position:relative;
+        top:3px;
+    }
+}
+
+.lef{float: left}
+.right{float: right}
+.center{text-align: center}
+.cb{clear: both}
+.red{color: $colorhover!important;}

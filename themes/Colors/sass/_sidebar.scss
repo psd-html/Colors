@@ -1,0 +1,29 @@
+/* style de la sidebar*/
+aside{
+    @include animate(bounce-in-right, 1s, 500ms);
+    padding-left: 20px!important;
+    
+    li{
+        list-style-type: none;
+        margin-bottom: 7px;
+        
+    }
+    
+    a:hover{color: $colorhover}
+    
+   
+    
+    h3{margin-bottom: 20px}
+    
+    .widget{margin-bottom: 30px;
+        
+        li a.tag{display: block;float: left;margin: 0 12px 16px 0}
+        
+        &::after{
+            clear: both;
+        }
+        
+        li.com span{display:block;color: #fff;font-style: italic}
+    }
+        
+}

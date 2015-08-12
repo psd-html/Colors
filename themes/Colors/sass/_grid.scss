@@ -1,0 +1,72 @@
+/* Valeurs par defaut */
+$wrap: 960px!default;
+$gutter: 20px!default;
+$bloc: 12!default;
+$max-width: 960px!default;
+
+
+/* Début mise en page */
+.wrap {width: $wrap;margin:0 auto}
+.wrap:after {content: "";display: table;clear: both;}
+
+.clear:before,.clear:after {content: " ";display: table}
+.clear:after {clear: both}
+.clear {*zoom: 1}
+
+
+/* Ajout des options sur tous les blocs */
+%bloc{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 0 $gutter * 0.5;
+
+    
+    img{
+        max-width: 100%
+    }
+}
+
+/* Création des blocs */
+@for $i from 1 through $bloc {
+	.bloc-#{$i} {
+        width: $i / $bloc * 100%;
+        @extend %bloc;
+	}
+}
+
+/* responsive */
+
+@media handheld, only screen and (max-width: $wrap) {
+    .wrap{
+        width: 100%
+    }
+}
+
+@media handheld, only screen and (max-width: $max-width) {
+
+    
+	.wrap {width: 100%;min-width: 0;margin: 0;padding: 0}
+	[class*='bloc-'] {width: auto;float: none;margin:0;padding-top: 10px}
+    
+    /* images */
+	img {max-width: 100%;height: auto;}
+    
+    /* navigation */
+	
+	.deco{display: none}
+    
+    /* formulaire */
+    input[type='text'], textarea, input.capcha, input[type='submit']{
+        width: 100%!important;
+        }
+    p.more>a{display: block;width: 100%;margin: 10px 0;text-align: center}
+    .right{float: none}
+
+}
+
+
+
+
+
+

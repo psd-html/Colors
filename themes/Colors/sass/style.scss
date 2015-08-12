@@ -1,0 +1,52 @@
+/* Reset et importation des mixins CSS */
+@import "compass/css3";
+@import "reset";
+
+
+/* @include animate(animation-name, animation-duration, animation-delay); */
+/* voir le projet et instruction: https://github.com/simko-io/animated.sass/blob/master/README.md */
+@import "animated";
+
+@include animation(bounce-in-right); /* pour le bloc sidebar */
+@include animation(fade-in); /* pour la partie section*/
+
+
+/* Largeur, espace entre les blocs et nombre de blocs */
+$wrap: 1160px;
+$gutter: 20px;
+$bloc: 12;
+$max-width: 768px;
+$police: 'Ubuntu', sans-serif;
+$size: 16px;
+
+$primaire: #909fb5;
+$secondaire: #fff;
+$colorbkg: #141C27;
+$colorhover: #e84c3d;
+
+$color1: #864300;
+$color2: #FF6517;
+$color3: #C2BA00;
+$color4: #00C1D2;
+$color5: #FFAA19;
+$color6: #DD008A;
+$color7: #864300;
+$color8: #FF6517;
+
+$facebook: #3b5998;
+$twitter: #33CCFF;
+$google: #DD4B39;
+$rss: #FF6600;
+
+
+
+/* importer les éléments du style */
+@import "fonts";
+@import "body";
+@import "header";
+@import "pageblog";
+@import "menu";
+@import "sidebar";
+@import "form";
+@import "footer";
+@import "grid";
