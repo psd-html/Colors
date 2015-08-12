@@ -9,7 +9,7 @@ Voir la démo à cette adresse: http://nextum.fr
 Utlisation du Framework-responsive-PluXml
 
 
-![Alt text](http://nextum.fr/color.png)
+![Alt text](http://nextum.fr/colors.png)
 
 Pour la partie admin
 
