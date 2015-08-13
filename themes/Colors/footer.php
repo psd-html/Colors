@@ -43,7 +43,7 @@
          
          
          <div class="bloc-4">
-             <h2>Nous suivrer</h2>
+             <h2>Nous suivre</h2>
 
              <div class="flux">
                  <a href="<?php eval($plxShow->callHook('colors','facebook')) ?>" class="facebook" title="page facebook">Facebook</a>
