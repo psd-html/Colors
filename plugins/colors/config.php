@@ -110,13 +110,28 @@ if(!empty($_POST)) {
 
 </div>
 
-<div data-tab="tab4">
+<div data-tab="tab4" ng-app="angularApp" ng-controller="appController">
+
+	<p><b>Votre message:</b> <br><? echo $plxPlugin->getParam('about'); ?></p>
 
 	<p>
 		<label for="about"><?php $plxPlugin->lang('L_FORM_ABOUT') ?></label>
-		<textarea id="about" rows="10"   name="about"><? echo $plxPlugin->getParam('about'); ?></textarea>
+		<textarea ng-model="content" id="about" rows="10"   name="about"></textarea>
 
 	</p>
+
+	 <p>
+        Vous pouvez ajouter les mises en forme du texte en HTML, <b>pensez à utliser des simples quotes.</b>
+        <br>
+	        <code>
+	            &lt;a href='votre lien' title='votre titre'&gt;Votre lien&lt;/a&gt;, &lt;br&gt;, &lt;p&gt; &lt;/p&gt; ...
+	        </code>
+        <br>
+        <b>Résultat :</b>
+    </p>
+
+		<p ng-bind-html="getHtml(content)"></div>
+
 
 
 </div>
@@ -137,4 +152,18 @@ if(!empty($_POST)) {
     $(document).ready(function(){
         $('#tabby-1').tabby();
     });
-</script>		
+</script>	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script>
+var app = angular.module("angularApp", []);
+app.controller("appController", function($scope, $sce){
+    $scope.getHtml = function(html){
+        return $sce.trustAsHtml(html);
+    };
+});
+app.filter('html', function($sce) {
+    return function(val) {
+        return $sce.trustAsHtml(val);
+    };
+});
+</script>	

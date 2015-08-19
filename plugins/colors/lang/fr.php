@@ -8,7 +8,7 @@ $LANG = array(
 'L_FORM_GOOGLE'     		=> 'Votre page google plus (ex: http://google.fr)',
 'L_FORM_LOGO'			    => 'Le lien de votre logo (ex: http://votresite.fr/data/medias/logo.png)',
 'L_FORM_ABOUT'		    	=> 'Votre texte dans la partie About',
-'L_FORM_BT'		    	=> 'Valider vos modifications',
+'L_FORM_BT'		    	    => 'Valider vos modifications',
 
 # navigation
 
