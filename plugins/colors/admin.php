@@ -112,11 +112,9 @@ if(!empty($_POST)) {
 
 <div data-tab="tab4" ng-app="angularApp" ng-controller="appController">
 
-	<p><b>Votre message:</b> <br><? echo $plxPlugin->getParam('about'); ?></p>
-
 	<p>
 		<label for="about"><?php $plxPlugin->lang('L_FORM_ABOUT') ?></label>
-		<textarea ng-model="content" id="about" rows="10"   name="about"></textarea>
+		<textarea ng-model="content" id="about" rows="10"   name="about"><? echo $plxPlugin->getParam('about'); ?></textarea>
 
 	</p>
 
@@ -157,6 +155,7 @@ if(!empty($_POST)) {
 <script>
 var app = angular.module("angularApp", []);
 app.controller("appController", function($scope, $sce){
+	$scope.content = "<? echo $plxPlugin->getParam('about'); ?>";
     $scope.getHtml = function(html){
         return $sce.trustAsHtml(html);
     };
