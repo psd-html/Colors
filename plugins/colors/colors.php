@@ -14,14 +14,14 @@ class colors extends plxPlugin {
     # Pour accéder à une page de configuration
     $this->setConfigProfil(PROFIL_ADMIN,PROFIL_MANAGER);
 
-    $this->addHook('ThemeEndHead', 'ThemeEndHead');
+    $this->addHook('AdminTopEndHead', 'AdminTopEndHead');
 
     # Déclaration des hooks
     $this->addHook('colors', 'colors'); //hook pour l'affichage manuel
 
     } 
 
-    public function ThemeEndHead() { ?>
+    public function AdminTopEndHead() { ?>
     <link rel="stylesheet" href="<?php echo PLX_PLUGINS ?>colors/app/style.css">
 
     <?php
