@@ -85,7 +85,10 @@ if(!empty($_POST)) {
 <div data-tab="tab3">
 
 	<p>
-		<label for="logo"><?php $plxPlugin->lang('L_FORM_LOGO') ?></label>
+		<label for="logo">
+			<?php $plxPlugin->lang('L_FORM_LOGO') ?>
+			<a id="toggler_thumbnail" href="javascript:void(0)" onclick="mediasManager.openPopup('logo', true)">+</a>
+		</label>
 
 		<input id="logo" name="logo"  maxlength="255" value="<?php echo $plxPlugin->getParam("logo"); ?>">
 	</p>
@@ -99,9 +102,13 @@ if(!empty($_POST)) {
 			<img src="<?php echo PLX_PLUGINS ?>colors/app/AucuneImage.jpg" alt="logo">
 
 				<?php
-			}else{?>
+			}else{
+				
+				$imgUrl = PLX_ROOT.$logo;
 
-			<img src="<?php echo $logo; ?>" alt="logo">
+				?>
+
+			<img src="<?php echo $imgUrl; ?>" alt="logo">
 
 		<?php
 			 

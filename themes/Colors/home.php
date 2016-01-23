@@ -17,6 +17,9 @@
                     </p>
 
                     <div class="contenu">
+                        <!-- Afficher l'image d'accroche -->
+                        <?php $plxShow->artThumbnail(); ?>
+                        
                         <!-- Affichage de l'article-->
                         <?php $plxShow->artChapo('Lire la suite'); ?>
                     </div>

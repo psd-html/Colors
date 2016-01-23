@@ -71,3 +71,35 @@ input[type='submit'], .bt {
     }
 }
 .content_com {min-height: 88px}
+
+/* pour l'indentation des commentaires */
+.level-0 {
+	margin-left: 0;
+}
+.level-1 {
+	margin-left: 50px;
+}
+.level-2 {
+	margin-left: 100px;
+}
+.level-3 {
+	margin-left: 150px;
+}
+.level-4 {
+	margin-left: 200px;
+}
+.level-5 {
+	margin-left: 250px;
+}
+
+#id_answer {color: #fff;width:100%;display:none;
+    
+    .content_com{min-height: 0;margin: 19px 0;}
+    
+    cite{display: block;margin-top: 10px;font-style: italic}
+}
+
+a.bt_repondre{
+    display:block;text-align: right;
+}
+a.cancel, .red{color: $color8;}

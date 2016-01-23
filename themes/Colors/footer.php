@@ -88,11 +88,8 @@
     <script src="<?php $plxShow->template(); ?>/js/app.min.js"></script>
     <script>
         (function() {
-
             $.fatNav();
-
         }());
     </script>
 </body>
 </html>
-

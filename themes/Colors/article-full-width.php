@@ -17,8 +17,8 @@
                 </p>
                 
                 <div class="contenu">
-                    <!-- Affichage de l'article-->
-                    <?php $plxShow->artContent(); ?>
+                   <!-- Affichage de l'article-->
+                   <?php $plxShow->artContent(); ?>
                 </div>
 
                 

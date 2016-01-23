@@ -15,8 +15,8 @@
                 </p>
                 
                 <div class="contenu">
-                    <!-- Affichage de l'article-->
-                    <?php $plxShow->artContent(); ?>
+                   <!-- Affichage de l'article-->
+                   <?php $plxShow->artContent(); ?>
                 </div>
 
                 <!-- informations de l'article, catégorie et Tags -->

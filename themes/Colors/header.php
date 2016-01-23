@@ -4,8 +4,7 @@
 <html lang="<?php $plxShow->defaultLang() ?>">
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+
 
 <meta charset="<?php $plxShow->charset('min'); ?>">
 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
@@ -16,7 +15,8 @@
 
 <link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png" />
 
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>   
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'> 
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>  
 <link rel="stylesheet" href="<?php $plxShow->template(); ?>/style.css" media="screen"/>
 
 	<?php $plxShow->templateCss() ?>
@@ -35,6 +35,8 @@
 </head>	
 
 <body class="top">
+
+
         
         <!-- header et navigation -->
         <div class="fat-nav">
@@ -48,8 +50,12 @@
         </div>
 
     <div class="wrap__body">
+
+
     
     <header class="header">
+
+      <?php eval($plxShow->callHook('Snow')); ?>
       
       <div class="deco">
           <div class="bloc-2">
