@@ -2,7 +2,7 @@ Color
 =========
 Template responsive 
 
-Compatible avec la version 5.4
+Compatible avec la version 5.5
 
 Voir la démo à cette adresse: http://nextum.fr
 
