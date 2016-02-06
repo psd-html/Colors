@@ -66,17 +66,17 @@ if(!empty($_POST)) {
 
 	<p>
 		<label for="facebook"><?php $plxPlugin->lang('L_FORM_FACEBOOK') ?></label>
-		<input id="facebook" name="facebook"  maxlength="255" value="<?php echo $plxPlugin->getParam("facebook"); ?>">
+		<input id="facebook" name="facebook"  maxlength="255" value="<?php echo plxUtils::strCheck($plxPlugin->getParam("facebook")) ?>">
 	</p>	
 
 	<p>
 		<label for="twitter"><?php $plxPlugin->lang('L_FORM_TWITTER') ?></label>
-		<input id="twitter" name="twitter"  maxlength="255" value="<?php echo $plxPlugin->getParam("twitter"); ?>">
+		<input id="twitter" name="twitter"  maxlength="255" value="<?php echo plxUtils::strCheck($plxPlugin->getParam("twitter")) ?>">
 	</p>
 
 	<p>
 		<label for="google"><?php $plxPlugin->lang('L_FORM_GOOGLE') ?></label>
-		<input id="google" name="google"  maxlength="255" value="<?php echo $plxPlugin->getParam("google"); ?>">
+		<input id="google" name="google"  maxlength="255" value="<?php echo plxUtils::strCheck($plxPlugin->getParam("google")) ?>">
 	</p>
 
 </div>
@@ -90,7 +90,7 @@ if(!empty($_POST)) {
 			<a id="toggler_thumbnail" href="javascript:void(0)" onclick="mediasManager.openPopup('logo', true)">+</a>
 		</label>
 
-		<input id="logo" name="logo"  maxlength="255" value="<?php echo $plxPlugin->getParam("logo"); ?>">
+		<input id="logo" name="logo"  maxlength="255" value="<?php echo plxUtils::strCheck($plxPlugin->getParam("logo")) ?>">
 	</p>
 
 	<?php 
