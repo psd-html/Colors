@@ -26,7 +26,7 @@
 
             </p>
 
-            <div class="<?php $plxShow->comType(); ?> level-<?php $plxShow->comLevel(); ?>" id="com-<?php $plxShow->comIndex(); ?>">
+            <div class="<?php $plxShow->comType(); ?> <?php $plxShow->comLevel(); ?>" id="com-<?php $plxShow->comIndex(); ?>">
                 <?php eval($plxShow->callHook('gravatar')); ?>
                 <p class="content_com type">
                     <?php $plxShow->comContent(); ?>
