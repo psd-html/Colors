@@ -54,7 +54,7 @@
                <p>
                     <label for="id_content" class="lab_com"><?php $plxShow->lang('COMMENT') ?> :</label>
                     <textarea id="id_content" name="content" ><?php $plxShow->comGet('content',''); ?></textarea>
-                    <div id="id_answer"></div>
+                    <p id="id_answer"></p>
                </p>
 
                <p>
